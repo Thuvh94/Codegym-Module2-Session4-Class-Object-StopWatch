@@ -1,4 +1,3 @@
-
 public class Main {
     public static void main(String[] args){
         StopWatch stopWatch = new StopWatch();
@@ -8,7 +7,6 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) Math.round(Math.random() * 10000);
         }
-        ;
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 1; j < array.length; j++) {
@@ -29,8 +27,8 @@ public class Main {
         long realStop = stopWatch.getEndTime();
         System.out.println("Start Time: " + realStart);
         System.out.println("Stop time: " + realStop);
-        long elapse = realStart - realStop;
-        System.out.println("Elapsed time: " + elapse);
+        long elapse = realStop - realStart;
+        System.out.println("Elapsed time: " + elapse + " milliseconds");
 
     }
 }
